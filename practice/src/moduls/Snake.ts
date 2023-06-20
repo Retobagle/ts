@@ -105,7 +105,7 @@ class Snake{
         for(let i=this.bodies.length-1; i>0; i--){
             // 获取前边身体的位置
             let X = (this.bodies[i-1] as HTMLElement).offsetLeft;
-            let Y = (this.bodies[i-1]as HTMLElement).offsetTop;
+            let Y = (this.bodies[i-1] as HTMLElement).offsetTop;
 
             // 将值设置到当前身体上
             (this.bodies[i] as HTMLElement).style.left = X + 'px';
