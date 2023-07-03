@@ -29,8 +29,11 @@ function rest(...arr: number[]): number {
 // 函数重载
 /* 给同一个函数提供多个函数类型定义，从而实现函数的重载
 函数重载真正执行的是同名函数最后定义的函数体 在最后一个函数体定义之前全都属于函数类型定义 不能写具体的函数实现方法 只能定义类型 */
-function fff(x: number, y: number): number;
-function fff(x: string, y: string): string;
-function fff(x: any, y: any): any {
-  return x + y;
+function enique(x: number, y: number): void;
+function enique(x: string, y: string): void;
+function enique(x: string|number, y: string|number): void {
+  console.log(123);
+  
 }
+enique(1,2)
+enique(1,'2')
